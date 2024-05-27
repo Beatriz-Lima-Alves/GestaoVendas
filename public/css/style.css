@@ -1,0 +1,354 @@
+.header-home {
+    background-color: #040C0F;
+    z-index: 0;
+}
+
+.btn-register {
+    background-color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.btn-login {
+    background-color: #64B83E;
+    color: white;
+    margin-right: 2%;
+
+}
+
+.main-home {
+    /*background-color: #663991;*/
+    background-color: #040C0F;
+    background-size: cover; /* para cobrir todo o contêiner */
+    height: 80vh; /* ajuste a altura conforme necessário */
+    display: flex;
+    justify-content: space-between; /* Distribui o espaço entre as duas partes */
+    align-items: center;
+}
+.main-register {
+    /*background-color: #663991;*/
+    background-color: #040C0F;
+    background-size: cover; /* para cobrir todo o contêiner */
+    height: 100vh; /* ajuste a altura conforme necessário */
+    display: flex;
+    justify-content: space-between; /* Distribui o espaço entre as duas partes */
+    align-items: center;
+}
+.half {
+    color: white;
+    background-color: #0f1e21;
+    height: 50vh; /* ajuste a altura conforme necessário */
+    width: 50%; /* Define a largura de cada parte */
+    margin: 2%;
+    padding-top: 2%;
+    /*border-radius: 25px;*/
+    position: relative;
+
+}
+.half-right {
+    color: white;
+    /*background-color: #0f1e21;*/
+    height: 50vh; /* ajuste a altura conforme necessário */
+    width: 40%; /* Define a largura de cada parte */
+    margin: 2%;
+    padding-top: 2%;
+    /*border-radius: 25px;*/
+    position: relative;
+
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animated-text {
+    animation: slideInRight 1s ease-in-out;
+}
+.half-img {
+    background:
+        linear-gradient(
+            rgba(15, 30, 33, 0.59),rgba(15, 30, 33, 0.59)
+        ),
+        url(../images/comp.jpg) no-repeat;
+    /*background-color: #040C0F;*/
+    /*background-image: url("../images/comp.jpg");*/
+    height: 80%; /* ajuste a altura conforme necessário */
+    width: 50%; /* Define a largura de cada parte */
+    position: absolute;
+
+}
+.t-60-bold{
+    font-size: 60px; /* Define o tamanho da fonte para 24 pixels */
+    padding-left: 4%;
+    font-weight: bold;
+
+}
+.t-40{
+    font-size: 40px; /* Define o tamanho da fonte para 24 pixels */
+    padding-left: 4%;
+}
+.t-20{
+    font-size: 20px; /* Define o tamanho da fonte para 24 pixels */
+    padding-left: 1%;
+    font-weight: bold;
+}
+.text-20{
+    font-size: 30px; /* Define o tamanho da fonte para 24 pixels */
+    padding-left: 3%;
+}
+.foote-home {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2e3238;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.pleft{
+    padding-left: 4%;
+}
+/* Estilos para o botão roxo */
+.purple-button {
+    /* Define a cor de fundo */
+    background-color: #64B83E;
+    /* Define a cor do texto */
+    color: #ffffff;
+    /* Define o preenchimento interno */
+    padding: 10px 20px;
+    /* Define as bordas arredondadas */
+    border-radius: 10px;
+    /* Define a margem do texto */
+    margin: 10px;
+    /* Remove o contorno do botão */
+    border: none;
+    /* Adiciona uma sombra suave */
+    box-shadow: 0 2px 4px rgb(100, 184, 62);
+    /* Adiciona uma transição suave */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilos quando o botão está em foco */
+.purple-button:focus {
+    /* Ajusta ligeiramente a sombra */
+    box-shadow: 0 4px 8px rgba(83, 14, 150, 0.29);
+}
+
+/* Estilos quando o botão é hover */
+.purple-button:hover {
+    /* Escurece ligeiramente a cor de fundo */
+    background-color: #64B83E;
+}
+.bg-green-bk {
+    background-color: #040C0F;
+}
+.bg-green-sb {
+    background-color: #0f1e21;
+}
+.bg-purple-btn {
+    background-color: #64B83E;
+}
+/* resources/css/style.css */
+
+.min-h-screen {
+    display: flex;
+}
+
+/* Estilos para o conteúdo da página */
+.main-content {
+    flex: 1;
+}
+.margem-body{
+    margin-left: 16%;
+}
+/* Estilos para o menu lateral */
+.sidebar {
+    width: 15%;
+    background-color: #040C0F;
+    color: #fff;
+    padding: 20px;
+    position: fixed; /* Adicionando a propriedade position: fixed; */
+    top: 0; /* Defina a distância do topo conforme necessário */
+    left: 0; /* Defina a distância da esquerda conforme necessário */
+    height: 100%; /* Ajuste a altura conforme necessário */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical caso o conteúdo seja maior do que a altura da barra lateral */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.8s ease;
+    border-radius: 3px;
+}
+
+.sidebar a:hover {
+    background-color: #64B83E; /* Cor de fundo ao passar o mouse */
+    border-radius: 3px;
+}
+.logout-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0; /* Alinhar à esquerda */
+    /*width: 100%; !* Ocupa toda a largura do aside *!*/
+    padding: 10px 20px;
+
+}
+
+.logout-btn a:hover {
+    background-color: red; /* Cor de fundo ao passar o mouse */
+    border-radius: 3px;
+}
+.linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.botao {
+    background-color: #64B83E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.botaoSub {
+    background-color: #15403B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botaoSub a:hover {
+    background-color: #64B83E; /* Cor de fundo ao passar o mouse */
+    border-radius: 5px;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.a-color-sub{
+    color: #64B83E;
+}
+/* Estilizando a tabela */
+.table-container {
+    border-radius: 6px;
+    margin-top: 2%;
+    width: 100%;
+    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal se a tabela for muito larga */
+}
+
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.modern-table th,
+.modern-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Adiciona uma linha horizontal entre as linhas */
+}
+
+.modern-table th {
+    background-color: #040C0F; /* Cor de fundo para o cabeçalho da tabela */
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilizando as linhas alternadas */
+.modern-table tbody tr:nth-child(even) {
+    background-color: rgba(100, 184, 62, 0.21); /* Cor de fundo para linhas pares */
+}
+.text-bold{
+    font-weight: bold;
+}
+.linha-default {
+    display: flex;
+    align-items: center;
+}
+.end{
+    justify-content: end;
+}
+.start{
+    justify-content: start;
+}
+
+.text-red{
+    color: red;
+}
+.cliente-info strong {
+    margin-left: 5%; /* Adapte o valor conforme desejado */
+}
+.top-products {
+    flex-basis: calc(50% - 10px); /* Define a largura de cada bloco de produto */
+    background-color: #ffffff; /* Cor de fundo */
+    max-width: 35%;
+    border-radius: 8px; /* Borda arredondada */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-top: 3%;
+}
+
+.top-products h2 {
+    color: #1f1f1f; /* Cor do título */
+    font-size: 1.5rem; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+.top-products ul {
+    list-style: none; /* Remover marcadores de lista */
+    padding: 0; /* Remover espaçamento interno */
+
+}
+
+.top-products li {
+    color: #1f1f1f; /* Cor do texto do item */
+    font-size: 1.2rem; /* Tamanho da fonte do item */
+    margin-bottom: 5px; /* Espaçamento inferior */
+
+}
+
+.top-products li:last-child {
+    margin-bottom: 0; /* Remover espaçamento inferior do último item */
+}
+.flex {
+    display: flex;
+    justify-content: space-between; /* Coloca os elementos em extremos da linha */
+    flex-wrap: wrap; /* Permite que os elementos se ajustem à largura da tela */
+}
